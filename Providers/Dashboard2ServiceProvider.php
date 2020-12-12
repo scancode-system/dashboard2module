@@ -4,6 +4,7 @@ namespace Modules\Dashboard2\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
+use Laravel\Fortify\Fortify;
 
 class Dashboard2ServiceProvider extends ServiceProvider
 {
@@ -28,6 +29,11 @@ class Dashboard2ServiceProvider extends ServiceProvider
         $this->registerConfig();
         $this->registerViews();
         $this->loadMigrationsFrom(module_path($this->moduleName, 'Database/Migrations'));
+
+        Fortify::loginView(function () {
+            return view('dashboard2::auth.login');
+        });
+
     }
 
     /**

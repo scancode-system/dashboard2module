@@ -25,7 +25,7 @@
         "joshbrw/laravel-module-installer": "v0.1.4",
         "laravelcollective/html": "^6.2",
         "nwidart/laravel-modules": "^8.2",
-        "laravel/fortify": "^1.6",
+        "laravel/fortify": "^1.7",
         "barryvdh/laravel-snappy": "^0.4",
         "h4cc/wkhtmltopdf-amd64": "0.12.x"
     }
