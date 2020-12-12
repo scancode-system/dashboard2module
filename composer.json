@@ -1,0 +1,32 @@
+{
+    "name": "scancode-system/dashboard2-module",
+    "description": "",
+    "authors": [
+        {
+            "name": "Leonardo B A Vasconcelos",
+            "email": "leonardo@scancode.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Dashboard2\\": ""
+        }
+    },
+    "type": "laravel-module",
+    "require": {
+        "joshbrw/laravel-module-installer": "v0.1.4",
+        "laravelcollective/html": "^6.2",
+        "nwidart/laravel-modules": "^8.2",
+        "laravel/fortify": "^1.6",
+        "barryvdh/laravel-snappy": "^0.4",
+        "h4cc/wkhtmltopdf-amd64": "0.12.x"
+    }
+}
